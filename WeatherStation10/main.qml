@@ -9,6 +9,14 @@ Window {
     visible: true
     title: qsTr("World Temperture")
 
+    Flickable {
+        anchors.fill: parent
+
+        contentWidth: parent.width
+        contentHeight: parent.height+100
+
+//        ScrollBar.horizontal: ScrollBar { id: hbar; active: vbar.active }
+        ScrollBar.vertical: ScrollBar { id: vbar; active: hbar.active }
 
 //    Flickable {
 //        id: flickable
@@ -127,5 +135,7 @@ Window {
 
 
 
+
     }
+}
 }
